@@ -1,9 +1,14 @@
 #!/usr/bin/python3
+"""Rebel int"""
+
+
 class MyInt(int):
+    """Rebel int class"""
+
     def __eq__(self, other):
-        """Override the equality operator (==)"""
+        """not equal when =="""
         return super().__ne__(other)
 
     def __ne__(self, other):
-        """Override the not equal operator (!=)"""
+        """equal when !="""
         return super().__eq__(other)
