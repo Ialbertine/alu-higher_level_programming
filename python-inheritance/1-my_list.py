@@ -1,12 +1,10 @@
 #!/usr/bin/python3
-'''Defines a class called MyList
-'''
+"""define class MyList"""
 
 
 class MyList(list):
-    '''MyList inherits from list
-    '''
+    """class that inherits from list
+    with public instance method to print sorted list"""
+
     def print_sorted(self):
-        '''Prints the list sorted in ascending order
-        '''
-        print(sorted(self, reverse=False))
+        print(sorted(self))
